@@ -1,9 +1,9 @@
 @layer components {
     .defaultNavbarSettings {
-        @apply bg-[#1b1b1b] py-10 px-16 flex items-center justify-between
+        @apply bg-[--bg] py-10 px-16 flex items-center justify-between
     }
     .logo {
-        @apply text-2xl font-semibold text-[#00FFFF] inline-block   
+        @apply text-2xl font-semibold text-[--primary-text] inline-block  
     }
     .navbarFlex {
         @apply flex items-center
@@ -11,11 +11,14 @@
     .navbarLinks{
         @apply px-5 py-5 relative transition duration-200 font-semibold
     }
+    .hamburgerIcon {
+        @apply p-3 bg-[--primary-text] lg:hidden
+    }
 }
 .navbarLinks::before{
     content: '#';
     margin-right: 4px;
-    color: #00ffff;
+    color: var(--primary-text);
     visibility: hidden;
 }
 .navbarLinks::after{

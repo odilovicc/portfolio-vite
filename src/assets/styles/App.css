@@ -6,8 +6,11 @@
 
 :root {
     color-scheme: dark;
-    --bg-primary: #1e1e1e;
-    --bg-secondary-darl: #1b1b1b;
+    --bg-primary: #000;
+    --primary-text: #bb86fc;
+    --secondary: #03dac6;
+    --bg: #121212;
+    --error: #cf6679;
 }
 body{
     font-family: 'Inter', sans-serif !important;
