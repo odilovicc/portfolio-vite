@@ -1,0 +1,22 @@
+@tailwind components;
+@layer components {
+  .defaultFlex {
+    @apply flex items-center justify-around;
+  }
+  .heroTitle {
+    @apply font-bold text-7xl;
+  }
+  .typeWriter {
+    @apply text-3xl my-12 mt-6 italic
+  }
+  .heroButton {
+    @apply overflow-hidden relative py-4 px-9 rounded-full bg-[--secondary] w-max transition duration-500 border-2 border-transparent hover:border-[--secondary] hover:bg-inherit hover:text-[--secondary]
+
+  }
+  .bgEffect {
+    @apply absolute p-96 rounded-full bg-[--secondary] -bottom-1/2 -left-56 bg-opacity-50 
+  }
+  .bgEffectTop {
+    @apply absolute p-96 rounded-full bg-[--secondary] -top-1/2 -right-56 bg-opacity-50 
+  }
+}
