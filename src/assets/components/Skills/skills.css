@@ -1,0 +1,16 @@
+@tailwind components;
+@layer components {
+  .skillsSection {
+    @apply p-10
+  }
+  .skillsSectionTitle{
+    @apply text-2xl font-semibold my-10 text-center
+  }
+}
+circle,
+rect,
+line {
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: transparent;
+}

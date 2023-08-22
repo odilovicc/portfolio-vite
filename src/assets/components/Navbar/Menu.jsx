@@ -14,6 +14,11 @@ function Menu() {
         <ul className="hidden lg:flex items-center gap-12 ">
           <li>
             <a href="#" className="navbarLinks">
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#" className="navbarLinks">
               About me
             </a>
           </li>
