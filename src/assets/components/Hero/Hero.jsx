@@ -34,7 +34,7 @@ function Hero() {
               animate="visible"
               variants={textAnimation}
             >
-              Bakhtiyor <span className="text-[--secondary]">Shodmonov</span>
+              Bakhtiyor <span className="secondName">Shodmonov</span>
             </motion.h1>
           </AnimatePresence>
           <h1 className="typeWriter">

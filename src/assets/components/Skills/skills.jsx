@@ -1,21 +1,12 @@
-import { motion } from "framer-motion";
 import "./skills.css";
 
-const draw = {
-  hidden: { pathLength: 0, opacity: 0 },
-  visible: (i) => {
-    const delay = 1 + i * 0.5;
-    return {
-      pathLength: 1,
-      opacity: 1,
-      transition: {
-        pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
-        opacity: { delay, duration: 0.01 },
-      },
-    };
-  },
-};
-
+import SkillHtml from "./SkillsList/html";
+import SkillCss from "./SkillsList/css";
+import SkillSass from "./SkillsList/sass";
+import SkillJs from "./SkillsList/js";
+import SkillVue from "./SkillsList/vue";
+import SkillReact from "./SkillsList/react";
+import React from "react";
 export default function Skills() {
   return (
     <div>
@@ -24,12 +15,13 @@ export default function Skills() {
           Skills <span className="text-[--primary-text]">#</span>
         </h1>
       </section>
-      <div className="flex items-center">
-        <div className="bg-[#1e1e1e] w-max bg-opacity-50">
-          <div className="mx-auto">
-            
-          </div>
-        </div>
+      <div className="skillsList">
+        <SkillHtml></SkillHtml>
+        <SkillCss></SkillCss>
+        <SkillSass></SkillSass>
+        <SkillJs></SkillJs>
+        <SkillVue></SkillVue>
+        <SkillReact></SkillReact>
       </div>
     </div>
   );

@@ -6,6 +6,18 @@
   .skillsSectionTitle{
     @apply text-2xl font-semibold my-10 text-center
   }
+  .skillsList{
+    @apply flex items-center px-10 justify-center gap-5
+  }
+  .skillCard{ 
+    @apply bg-[#1e1e1e] text-white p-10 hover:transform hover:scale-125 rounded-md w-max bg-opacity-50 flex flex-col items-center gap-12
+  }
+  .colorText {
+    color: white !important;
+  }
+  .strokeColor{
+    background: #000;
+  }
 }
 circle,
 rect,
