@@ -2,18 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .defaultButton {
+    @apply py-4 px-9 rounded-full bg-[--secondary] w-max transition duration-500 border-2 border-transparent hover:border-[--secondary] hover:bg-inherit hover:text-[--secondary];
+  }
+}
 
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 :root {
-    color-scheme: dark;
-    --bg-primary: #000;
-    --primary-text: #bb86fc;
-    --secondary: #03dac6;
-    --bg: #121212;
-    --error: #cf6679;
+  color-scheme: dark;
+  --bg-primary: #000;
+  --primary-text: #bb86fc;
+  --secondary: #03dac6;
+  --bg: #121212;
+  --error: #cf6679;
 }
-body{
-    font-family: 'Inter', sans-serif !important;
-    background: var(--bg-primary);
+body {
+  font-family: "Inter", sans-serif !important;
+  background: var(--bg-primary);
 }

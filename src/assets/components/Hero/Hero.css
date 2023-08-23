@@ -10,8 +10,11 @@
     @apply text-3xl my-12 mt-6 italic
   }
   .heroButton {
-    @apply overflow-hidden relative py-4 px-9 rounded-full bg-[--secondary] w-max transition duration-500 border-2 border-transparent hover:border-[--secondary] hover:bg-inherit hover:text-[--secondary]
-
+    @apply py-4 px-9 rounded-full bg-[--secondary] w-max transition duration-500 border-2 border-transparent hover:border-[--secondary] hover:bg-inherit hover:text-[--secondary]
+  }
+  .secondName{
+    text-shadow: 0 0 55px var(--secondary);
+    @apply text-[--secondary]
   }
   .bgEffect {
     @apply absolute p-96 rounded-full bg-[--secondary] -bottom-1/2 -left-56 bg-opacity-50 

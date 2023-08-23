@@ -1,0 +1,28 @@
+@tailwind components;
+@layer components {
+  .aboutSection {
+    @apply p-10 rounded-xl my-20;
+  }
+  .title {
+    @apply text-2xl font-semibold text-center;
+  }
+  .defaultFlexSettings {
+    @apply flex items-center justify-center
+  }
+  .secondPart {
+    @apply my-4
+  }
+  .aboutText{
+    @apply w-1/2
+  }
+  .aboutTextImage {
+    @apply p-10 flex items-center justify-center gap-56
+  }
+  .aboutImage{
+    @apply relative
+  }
+  .aboutImage::before{
+    content: '';
+    @apply p-56 absolute -top-24 right-0 rounded-full -z-10 bg-[--secondary]
+  }
+}

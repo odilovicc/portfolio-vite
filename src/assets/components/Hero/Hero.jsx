@@ -3,11 +3,6 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import { motion, AnimatePresence } from "framer-motion";
 import Ripples from "react-ripples";
-import { createRipples } from "react-ripples";
-const MyRipples = createRipples({
-  color: "purple",
-  during: 2200,
-});
 const textAnimation = {
   hidden: {
     x: -100,
@@ -39,7 +34,7 @@ function Hero() {
               animate="visible"
               variants={textAnimation}
             >
-              Bakhtiyor <span className="text-[--secondary]">Shodmonov</span>
+              Bakhtiyor <span className="secondName">Shodmonov</span>
             </motion.h1>
           </AnimatePresence>
           <h1 className="typeWriter">
