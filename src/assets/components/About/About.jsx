@@ -19,7 +19,7 @@ function About() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
-                >
+                > 
                   I have a rich history in the field of web development.
                   Starting my journey as a self-taught programmer, I quickly
                   developed a passion for creating beautiful and functional
