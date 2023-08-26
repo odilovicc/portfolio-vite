@@ -25,12 +25,4 @@
     content: '';
     @apply p-56 absolute -top-24 right-0 rounded-full -z-10 bg-[--secondary]
   }
-  .aboutText::before{
-    content: '';
-    background-image: url('/images/pin.png');
-    background-color: var(--secondary);
-    background-size: cover;
-    background-repeat: no-repeat;
-    @apply absolute -top-14 -z-10 right-0 p-5 rounded-full
-  }
 }

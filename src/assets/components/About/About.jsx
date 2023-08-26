@@ -3,7 +3,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 function About() {
   return (
-    <div>
+    <div id="about">
       <section className="aboutSection">
         <h1 className="title">
           About <span className="text-[--primary-text]">Me #</span>

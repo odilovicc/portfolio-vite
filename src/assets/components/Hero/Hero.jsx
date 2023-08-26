@@ -16,7 +16,7 @@ const textAnimation = {
 
 function Hero() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden h-screen">
       <div
         className="defaultFlex text-center w-1/2 mx-auto "
         style={{

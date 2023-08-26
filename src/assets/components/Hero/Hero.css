@@ -4,10 +4,10 @@
     @apply flex items-center justify-around;
   }
   .heroTitle {
-    @apply font-bold text-7xl;
+    @apply font-bold lg:text-7xl text-4xl;
   }
   .typeWriter {
-    @apply text-3xl my-12 mt-6 italic
+    @apply lg:text-3xl text-xl my-12 mt-6 italic
   }
   .heroButton {
     @apply py-4 px-9 rounded-full bg-[--secondary] w-max transition duration-500 border-2 border-transparent hover:border-[--secondary] hover:bg-inherit hover:text-[--secondary]
@@ -17,9 +17,9 @@
     @apply text-[--secondary]
   }
   .bgEffect {
-    @apply absolute p-96 rounded-full bg-[--secondary] -bottom-1/2 -left-56 bg-opacity-50 
+    @apply absolute p-96 lg:block hidden rounded-full bg-[--secondary] lg:-bottom-1/2 bottom-0 -left-56 bg-opacity-50 
   }
   .bgEffectTop {
-    @apply absolute p-96 rounded-full bg-[--secondary] -top-1/2 -right-56 bg-opacity-50 
+    @apply absolute p-96 lg:block hidden rounded-full bg-[--secondary] lg:-top-1/2 top-0 -right-56 bg-opacity-50 
   }
 }

@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer components {
+  html {
+    @apply lg:overflow-hidden overflow-scroll;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
   .defaultButton {
     @apply py-4 px-9 rounded-full bg-[--secondary] w-max transition duration-500 border-2 border-transparent hover:border-[--secondary] hover:bg-inherit hover:text-[--secondary];
   }
@@ -21,4 +26,36 @@
 body {
   font-family: "Inter", sans-serif !important;
   background: var(--bg-primary);
+}
+
+.app-container {
+  width: 100vw;
+  position: relative;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.sidebar-open {
+  width: 80vw;
+  transition: width 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
 }
