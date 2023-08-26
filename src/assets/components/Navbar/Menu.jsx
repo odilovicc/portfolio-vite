@@ -41,7 +41,7 @@ function Menu() {
             </a>
           </li>
           <li>
-            <a href="#" className="navbarLinks">
+            <a href="#portfolio" className="navbarLinks">
               Portfolio
             </a>
           </li>

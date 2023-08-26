@@ -4,6 +4,7 @@ import Hero from "./assets/components/Hero/Hero";
 import Skills from "./assets/components/Skills/skills";
 import About from "./assets/components/About/About";
 import Sidebar from "./assets/components/ui/Sidebar/Sidebar";
+import Portfolio from "./assets/components/Portfolio/Portfolio";
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
         <div className="lg:w-[90vw] w-[100vw]">
           <Skills></Skills>
           <About></About>
+          <Portfolio></Portfolio>
         </div>
       </div>
     </div>

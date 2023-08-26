@@ -3,9 +3,9 @@ import * as React from "react";
 import { motion } from "framer-motion";
 function About() {
   return (
-    <div id="about">
+    <div id="about" className="flex items-center justify-center">
       <section className="aboutSection">
-        <h1 className="title">
+      <h1 className="title">
           About <span className="text-[--primary-text]">Me #</span>
         </h1>
         <div className="mx-auto">

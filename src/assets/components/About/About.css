@@ -1,7 +1,7 @@
 @tailwind components;
 @layer components {
   .aboutSection {
-    @apply p-10 rounded-xl my-20;
+    @apply p-10 rounded-xl my-20 h-screen py-36;
   }
   .title {
     @apply text-2xl font-semibold text-center;

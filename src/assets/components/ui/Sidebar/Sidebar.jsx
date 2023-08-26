@@ -33,10 +33,10 @@ const Sidebar = () => {
           <a href="#about" className='sidebarLinks'>About Me <span className='transition duration-500 text-[--primary-text] hidden'>#</span></a>
         </li>
         <li className="my-5">
-          <a href="#" className='sidebarLinks'>Portfolio <span className='transition duration-500 text-[--primary-text] hidden'>#</span></a>
+          <a href="#portfolio" className='sidebarLinks'>Portfolio <span className='transition duration-500 text-[--primary-text] hidden'>#</span></a>
         </li>
         <li className="my-5">
-          <a href="#" className='sidebarLinks'>Contacts <span className='transition duration-500 text-[--primary-text] hidden'>#</span></a>
+          <a href="#contacts" className='sidebarLinks'>Contacts <span className='transition duration-500 text-[--primary-text] hidden'>#</span></a>
         </li>
         <li className="backButton">
           <a href="#">Back to top</a>
