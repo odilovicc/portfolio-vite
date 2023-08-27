@@ -1,0 +1,48 @@
+@tailwind components;
+@layer components {
+  .portfolioContainer {
+    @apply h-screen py-10;
+  }
+  .sectionTitle {
+    @apply text-2xl font-semibold text-center;
+  }
+  .cardContainer {
+    @apply flex items-center gap-24 justify-center py-12 h-1/2;
+  }
+  .card {
+    @apply p-24 bg-white rounded-xl overflow-hidden relative transition-transform duration-500 hover:scale-150;
+  }
+
+  .cardTitle {
+    @apply text-2xl font-semibold text-black;
+  }
+
+  .card .effect {
+    @apply absolute -bottom-[70px] p-10 rounded-xl bg-[--primary-text] w-full left-0 transition duration-500;
+    top: 210px;
+    transition-property: top;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+  .card .effect h1 {
+    @apply font-semibold text-2xl text-center
+  }
+  .card .effect a {
+    @apply py-1 border-2 rounded-full flex items-center justify-center mt-12 transition-all duration-500
+  }
+  .card .effect a svg path {
+    fill: #fff; 
+  }
+
+  .card .effect a:hover {
+    @apply bg-white text-[--primary-text]
+  }
+  .card .effect a:hover svg path {
+    fill: var(--primary-text);
+  }
+
+  .card:hover .effect {
+    top: 0px;
+    border-radius: 0;
+  }
+}

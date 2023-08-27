@@ -1,0 +1,7 @@
+@tailwind components;
+@layer components {
+    .contactsContainer {
+        @apply flex items-center bg-[--secondary] justify-center;
+        min-height: 100vh;
+    }
+}
